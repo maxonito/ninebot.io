@@ -413,9 +413,17 @@ ul {
 	}
 
 	.table {
+		tr > td:first-child {
+			border-left: 2px solid @orange;
+			border-right: 2px solid @orange;
+		}
 		.top-line{
 			vertical-align: bottom;
 			border: none;
+
+			&-first {
+				border-top: 2px solid @orange;
+			}
 		}
 		.top-model {
 			border: none;
@@ -425,13 +433,22 @@ ul {
 		.red-sub {
 			color: @orange;
 			font-size: 2rem;
-			border: none;
 			padding-top: 20px;
+			border: none;
+
+			&-far {
+				color: @orange;
+				font-size: 2rem;
+				padding-top: 20px;
+				border-right: 0 solid @white !important;
+				border-top: 0 solid @white !important;
+			}
 
 		}
 		.simple-text {
 			font-size: 1.8rem;
 			font-weight: 700;
+			border-top: 2px solid lighten(@grey, 20%);
 		}
 		.cost {
 			border: none;
@@ -443,6 +460,11 @@ ul {
 		.buy {
 			text-align: center;
 			border: none;
+			padding-bottom: 20px;
+
+			&-first {
+				border-bottom: 2px solid @orange;
+			}
 			button {
 				padding: 1rem 4rem;
 				color: @white;
@@ -465,3 +487,65 @@ ul {
 	}
 }
 
+.howride {
+	background-color: #000;
+	text-align: center;
+	padding: 50px 0;
+	&-title {
+		color: @white;
+		font-size: 5rem;
+		font-weight: 700;
+	}
+	&-text {
+		width: 80%;
+		margin: auto;
+		color: @white;
+		font-size: 1.6rem;
+		margin-bottom: 40px;
+		margin-top: 40px;
+	}
+	&-img {
+		width: 40%;
+		height: 180px;
+	}
+}
+
+.rideall {
+	padding: 50px 0;
+	text-align: center;
+
+	&-title {
+		font-size: 5rem;
+		text-transform: uppercase;
+		font-weight: 700;
+	}
+
+	&-text {
+		font-size: 1.6rem;
+		width: 70%;
+		margin: auto;
+		font-weight: 700;
+		margin-bottom: 40px;
+		margin-top: 10px;
+	}
+}
+
+.light {
+	background: #fff url(../img/ninebot/light/bg.jpg) center no-repeat;
+	text-align: center;
+	color: @white;
+	padding: 50px 0;
+
+	&-title {
+		font-size: 5rem;
+		text-transform: uppercase;
+		font-weight: 700;
+		margin-bottom: 40px;
+	}
+
+	&-text {
+		font-size: 1.6rem;
+		width: 80%;
+		margin: auto
+	}
+}
