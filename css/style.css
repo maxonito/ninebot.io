@@ -554,7 +554,7 @@ ul {
   height: 40px;
   font-size: 2.4rem;
   margin-bottom: 20px;
-  width: 80%;
+  width: 330px;
   color: #ffffff;
   border-bottom: 1px solid #999c9e;
 }
@@ -572,7 +572,7 @@ ul {
 }
 .form-block .form-own button {
   display: inline-block;
-  width: 80%;
+  width: 330px;
   padding: 20px 30px;
   background-color: #ff6700;
   border: none;
@@ -592,4 +592,49 @@ ul {
 }
 .charge-text {
   font-size: 2rem;
+}
+.smart {
+  text-align: center;
+  background-color: #000;
+  color: #ffffff;
+  padding: 50px 0;
+}
+.smart-title {
+  font-size: 6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.smart-text {
+  font-size: 1.8rem;
+  width: 90%;
+  margin: auto;
+  margin-bottom: 80px;
+  margin-top: 10px;
+}
+.smart-hand {
+  position: relative;
+  bottom: -50px;
+}
+.download-video {
+  padding: 50px 0;
+}
+.download-video .form-block-title {
+  color: #323940;
+  width: 70%;
+  font-size: 5rem;
+}
+.download-video .form-block-text {
+  color: #000;
+  width: 40%;
+}
+.download-video .form-own input {
+  color: #323940;
+  margin-bottom: 40px;
+}
+.download-video-img {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  right: -40%;
 }
