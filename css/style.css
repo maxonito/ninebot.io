@@ -370,3 +370,51 @@ ul {
   font-size: 1.6rem;
   margin-bottom: 40px;
 }
+.compare .table .top-line {
+  vertical-align: bottom;
+  border: none;
+}
+.compare .table .top-model {
+  border: none;
+  font-size: 2rem;
+  font-weight: 700;
+}
+.compare .table .red-sub {
+  color: #ff6700;
+  font-size: 2rem;
+  border: none;
+  padding-top: 20px;
+}
+.compare .table .simple-text {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+.compare .table .cost {
+  border: none;
+  padding-top: 40px;
+  font-size: 2.6rem;
+  font-weight: 700;
+  text-align: center;
+}
+.compare .table .buy {
+  text-align: center;
+  border: none;
+}
+.compare .table .buy button {
+  padding: 1rem 4rem;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 2rem;
+  border: none;
+  background-color: #e65d00;
+  border-radius: 7px;
+}
+.compare .table .buy a {
+  padding: 1rem 4rem;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 2rem;
+  border: none;
+  background-color: #e65d00;
+  border-radius: 7px;
+}
