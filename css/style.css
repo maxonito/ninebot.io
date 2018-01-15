@@ -332,6 +332,9 @@ ul {
   background-size: cover;
   height: 1000px;
 }
+.charact-item {
+  text-align: center;
+}
 .charact-title {
   font-size: 5rem;
   font-weight: 700;
