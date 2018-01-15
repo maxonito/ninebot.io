@@ -638,3 +638,24 @@ ul {
           transform: translate(-50%, -50%);
   right: -40%;
 }
+.wheel {
+  background: #ffffff url(../img/ninebot/wheel/bg.jpg) center no-repeat;
+  background-size: cover;
+  padding: 200px 0;
+}
+.wheel-title {
+  font-size: 5rem;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.wheel-text {
+  font-size: 1.6rem;
+  color: #ffffff;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.wheel .red-text {
+  color: #ff6700;
+  margin-top: 10px;
+}
