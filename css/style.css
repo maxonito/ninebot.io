@@ -17,6 +17,9 @@ body {
 ul {
   list-style: none;
 }
+* {
+  outline: none;
+}
 .header {
   background-color: #ff6700;
 }
@@ -483,16 +486,110 @@ ul {
   background: #ffffff url(../img/ninebot/light/bg.jpg) center no-repeat;
   text-align: center;
   color: #ffffff;
-  padding: 50px 0;
+  padding: 50px 0 300px;
 }
 .light-title {
-  font-size: 5rem;
+  font-size: 6rem;
   text-transform: uppercase;
   font-weight: 700;
-  margin-bottom: 40px;
 }
 .light-text {
   font-size: 1.6rem;
-  width: 80%;
+  width: 70%;
   margin: auto;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+.fast {
+  background: #ffffff url(../img/ninebot/fast/bg.jpg) center no-repeat;
+  background-size: cover;
+  padding: 200px 0;
+}
+.fast-title {
+  font-size: 6rem;
+  color: #323940;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.fast-img {
+  margin-bottom: 15px;
+}
+.fast-text {
+  width: 90%;
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin-bottom: 40px;
+}
+.fast-text-red {
+  display: inline-block;
+  color: #ff6700;
+  font-size: 1.4rem;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #ff6700;
+}
+.test {
+  background: #ffffff url(../img/ninebot/test/bg.jpg) center no-repeat;
+  background-size: cover;
+  padding: 40px 0;
+}
+.form-block {
+  width: 100%;
+  border: 5px solid #ff6700;
+  padding: 20px;
+  color: #ffffff;
+}
+.form-block-title {
+  font-size: 6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.form-block-text {
+  font-size: 1.6rem;
+  margin-bottom: 30px;
+}
+.form-block .form-own input {
+  display: inline-block;
+  background-color: transparent;
+  border: none;
+  height: 40px;
+  font-size: 2.4rem;
+  margin-bottom: 20px;
+  width: 80%;
+  color: #ffffff;
+  border-bottom: 1px solid #999c9e;
+}
+.form-block .form-own input::-webkit-input-placeholder {
+  color: #999c9e;
+}
+.form-block .form-own input:-ms-input-placeholder {
+  color: #999c9e;
+}
+.form-block .form-own input::-ms-input-placeholder {
+  color: #999c9e;
+}
+.form-block .form-own input::placeholder {
+  color: #999c9e;
+}
+.form-block .form-own button {
+  display: inline-block;
+  width: 80%;
+  padding: 20px 30px;
+  background-color: #ff6700;
+  border: none;
+  border-bottom: 3px solid #cc5200;
+  font-size: 2rem;
+  border-radius: 7px;
+  text-transform: uppercase;
+}
+.charge {
+  background: #ffffff url(../img/ninebot/charge/bg.jpg) center right no-repeat;
+  padding: 200px 0;
+}
+.charge-title {
+  font-size: 5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.charge-text {
+  font-size: 2rem;
 }
