@@ -1,6 +1,7 @@
 @media (max-width:1000px){
   .top-header ul{
   margin-top: 10px;
+  background-color: #0a8ad9;
 }
   .media-mobile{
     width: 100px;
@@ -15,13 +16,6 @@
     line-height: 55px;
   }
 
-  .logo{
-   margin-left: 59px;
-   width: 200px;
-   margin-top: 22px;
-   float: none;
-   height:64px;
- }
  .phone {
   margin-right: 0;
   text-decoration: none;
