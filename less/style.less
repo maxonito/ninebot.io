@@ -1,0 +1,866 @@
+// Шрифты
+@font-face {
+    font-family: "ProximaNovaBold"; 
+    src: url('../fonts/ProximaNovaBold.otf'); 
+}
+@font-face {
+    font-family: "ProximaNovaRegular"; 
+    src: url('../fonts/ProximaNovaRegular.otf'); 
+}
+@font-face {
+    font-family: "ProximaNovaLight"; 
+    src: url('../fonts/ProximaNovaLight.otf'); 
+}
+
+// Переменные
+@white: #fff;
+@black: #000;
+@orange: #ff6700;
+@dark: #323940;
+@grey: #999c9e;
+@green: #66cc66;
+
+// Базовые стили
+body {
+	font-family: "ProximaNovaRegular", sans-serif ;
+	font-size: 14px;
+}
+ul {
+	list-style: none;
+}
+
+* {
+	outline: none;
+}
+
+// Основные стили
+.header {
+	background-color: @orange;
+	&-menu {
+		list-style: none;
+		padding: 0;
+		margin-top: 10px;
+		margin-bottom: 10px;
+
+		&-item {
+			display: inline-block;
+			height: 100%;
+
+			a {
+				color: @white;
+				font-size: 1.4rem;
+				text-transform: uppercase;
+				margin-right: 1.4rem;
+			}
+		}
+	}
+
+	&-number {
+		text-align: center;
+		color: @white;
+		font-size: 1.8rem;
+		line-height: 40px;
+		}
+}
+
+.logo-row {
+	position: relative;
+	padding: 10px;
+	padding-bottom: 0;
+
+	.xiaomi-logo{
+		position: absolute;
+		display: inline-block;
+		margin-right: 15px;
+		width: 45px;
+	}
+
+	&-text {
+		display: inline-block;
+		color: @orange;
+		text-transform: uppercase;
+		margin-left: 55px;
+		margin-top: 5px;
+	}
+	&-btn {
+		padding: 1.2rem 2rem;
+		background-color: darken(@orange, 4%);
+		border: none;
+		color: @white;
+		text-transform: uppercase;
+		border-radius: 7px;
+	}
+	&-wrap {
+		text-align: center;
+	}
+}
+
+.range {
+	background-color: @dark;
+
+	&-list {
+		height: 170px;
+		padding: 0;
+		margin: 0;
+
+		&-item {
+			position: relative;
+			display: inline-block;
+			width: 12%;
+			height: 100%;
+			text-align: center;
+			padding-top: 20px;
+			padding-bottom: 20px;
+		}
+	}
+
+	&-text {
+		display:block;
+		height: 30%;
+		text-transform: uppercase;
+		font-size: 2rem;
+		font-weight: 700;
+		color: @grey;
+	}
+	&-img {
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+
+	&-img-wrap{
+		display: inline-block;
+		width: 100%;
+		height: 70%;
+	}
+	.active {
+		background-color: @orange;
+
+		.range-text {
+			color: @white;
+		}
+	}
+
+	.img-1 {
+		width: 45%;
+		top: 50%;
+		transform: translate(-50%,-60%);
+	}
+	.img-2 {
+		width: 60%;
+		top: 50%;
+		transform: translate(-50%,-60%);
+	}
+	.img-3 {
+		width: 60%;
+		top: 50%;
+		transform: translate(-50%,-60%);
+	}
+	.img-4 {
+		width: 60%;
+		top: 50%;
+		transform: translate(-50%,-65%);
+	}
+	.img-5 {
+		width: 45%;
+		top: 50%;
+		transform: translate(-50%,-60%);
+	}
+	.img-6 {
+		width: 45%;
+		top: 50%;
+		transform: translate(-50%,-60%);
+	}
+	.img-7 {
+		width: 60%;
+		top: 50%;
+		transform: translate(-50%,-60%);
+	}
+	.img-8 {
+		width: 60%;
+		top: 50%;
+		transform: translate(-50%,-30%);
+	}
+}
+
+.hiro {
+	padding-top: 40px;
+	&-item {
+		font-size: 4rem;
+		font-weight: 700;
+	}
+
+	&-vnal {
+		transform: translateY(-20%);
+		color: @green;
+		font-size: 1.4rem;
+		display: inline-block;
+		margin-left: 10px;
+		padding: 2px 10px;
+		line-height: 20px;
+		border: 2px solid @green;
+	}
+
+	&-title {
+		font-size: 15rem;
+		text-transform: uppercase;
+		font-weight: 700;
+		line-height: 0.88;
+		margin: 0;
+		margin-bottom: 30px;
+	}
+
+	&-select {
+		color: @grey;
+		display: block;
+	}
+
+	&-white {
+		display: inline-block;
+		margin-top: 15px;
+		color: @orange;
+	}
+	&-black {
+		display: inline-block;
+		margin-top: 15px;
+		color: @grey;
+	}
+
+	&-old-price {
+		display: inline-block;
+		margin-top: 20px;
+		font-size: 2.4rem;
+		text-decoration: line-through;
+	}
+	&-new-price {
+		display: inline-block;
+		font-size: 4rem;
+		font-weight: 700;
+	}
+
+	&-btn {
+		background-color: darken(@orange, 5%);
+		border: none;
+		color: @white;
+		padding: 15px 65px;
+		text-transform: uppercase;
+		font-size: 2rem;
+		border-radius: 7px;
+	}
+
+	&-lower {
+		color: @orange;
+		display: inline-block;
+		line-height: 0.9;
+		border-bottom: 1px dotted @orange;
+	}
+
+	&-advant1 {
+		display: inline-block;
+		color: @grey;
+		margin-top: 20px;
+		font-size: 1.4rem;
+
+		&::before {
+			content: "";
+			transform: translateY(40%);
+			display: inline-block;
+			width: 50px;
+			height: 30px;
+			background: #fff url(../img/ninebot/header+section-1/mini1.png) center no-repeat;
+			background-size: 40%;
+		}
+	}
+	&-advant2 {
+		display: inline-block;
+		color: @grey;
+		font-size: 1.4rem;
+
+		&::before {
+			content: "";
+			transform: translateY(40%);
+			display: inline-block;
+			width: 50px;
+			height: 30px;
+			background: #fff url(../img/ninebot/header+section-1/mini2.png) center no-repeat;
+			background-size: 35%;
+		}
+	}
+	&-advant3 {
+		display: inline-block;
+		color: @grey;
+		font-size: 1.4rem;
+
+		&::before {
+			content: "";
+			transform: translateY(40%);
+			display: inline-block;
+			width: 50px;
+			height: 30px;
+			background: #fff url(../img/ninebot/header+section-1/mini3.png) center no-repeat;
+			background-size: 40%;
+		}
+	}
+
+	&-rait {
+		margin-top: 70px;
+	}
+
+	&-big {
+		position: absolute;
+		left: -45%;
+		top: 30%;
+		width: 160%;
+	}
+}
+
+.complect {
+	padding: 100px 0;
+	&-title {
+		text-align: center;
+		text-transform: uppercase;
+		font-weight: 700;
+		font-size: 6rem;
+	}
+
+	&-text {
+		width: 40%;
+		font-size: 1.6rem;
+		text-align: center;
+		margin: auto;
+		margin-bottom: 40px;
+	}
+}
+
+// Стили для карусели
+.film_roll_pager {
+    display: none;
+}
+.film_roll_child {
+    margin: 0 10px;
+}
+.film_roll_child:not(.active) {
+    opacity: .6;
+}
+.film_roll_next {
+    background: url(../img/ninebot/complect/next.png) no-repeat !important;
+    width: 72px !important;
+    height: 72px !important;
+    border: none !important;
+    border-radius: 0 !important;
+    color: transparent !important;
+    right: 10.5% !important;
+    opacity: 1 !important;
+}
+.film_roll_prev {
+    background: url(../img/ninebot/complect/prev.png) no-repeat !important;
+    width: 72px !important;
+    height: 72px !important;
+    border: none !important;
+    border-radius: 0 !important;
+    color: transparent !important;
+    left: 9.2% !important;
+    opacity: 1 !important;
+}
+
+.charact {
+	background: #fff url(../img/ninebot/charact/overall-summary-bg.jpg) center no-repeat;
+	background-size: cover;
+	height: 1000px;
+	&-item {
+		text-align: center;
+	}
+
+	&-title {
+		font-size: 5rem;
+		font-weight: 700;
+		color: @dark;
+		text-align: center;
+		text-transform: uppercase;
+		padding-top: 37%;
+	}
+	p {
+		text-align: center;
+		margin-top: 10px;
+		font-size: 1.6rem;
+		color: @orange;
+	}
+
+	&-text {
+		width: 40%;
+		text-align: center;
+		margin: auto;
+		font-size: 1.6rem;
+		margin-bottom: 40px;
+		color: @dark;
+	}
+
+}
+
+#film_roll_two {
+	margin-top: 30px;
+}
+
+.compare {
+	&-title {
+		font-size: 5rem;
+		font-weight: 700;
+		color: @dark;
+		text-align: center;
+		text-transform: uppercase;
+	}
+	&-text {
+		text-align: center;
+		margin: auto;
+		font-size: 1.6rem;
+		margin-bottom: 40px;
+	}
+
+	.table {
+		tr > td:first-child {
+			border-left: 2px solid @orange;
+			border-right: 2px solid @orange;
+		}
+		.top-line{
+			vertical-align: bottom;
+			border: none;
+
+			&-first {
+				border-top: 2px solid @orange;
+			}
+		}
+		.top-model {
+			border: none;
+			font-size: 2rem;
+			font-weight: 700;
+		}
+		.red-sub {
+			color: @orange;
+			font-size: 2rem;
+			padding-top: 20px;
+			border: none;
+
+			&-far {
+				color: @orange;
+				font-size: 2rem;
+				padding-top: 20px;
+				border-right: 0 solid @white !important;
+				border-top: 0 solid @white !important;
+			}
+
+		}
+		.simple-text {
+			font-size: 1.8rem;
+			font-weight: 700;
+			border-top: 2px solid lighten(@grey, 20%);
+		}
+		.cost {
+			border: none;
+			padding-top: 40px;
+			font-size: 2.6rem;
+			font-weight: 700;
+			text-align: center;
+		}
+		.buy {
+			text-align: center;
+			border: none;
+			padding-bottom: 20px;
+
+			&-first {
+				border-bottom: 2px solid @orange;
+			}
+			button {
+				padding: 1rem 4rem;
+				color: @white;
+				text-transform: uppercase;
+				font-size: 2rem;
+				border: none;
+				background-color: darken(@orange, 5%);
+				border-radius: 7px;
+			}
+			a {
+				padding: 1rem 4rem;
+				color: @white;
+				text-transform: uppercase;
+				font-size: 2rem;
+				border: none;
+				background-color: darken(@orange, 5%);
+				border-radius: 7px;
+			}
+		}
+	}
+}
+
+.howride {
+	background-color: #000;
+	text-align: center;
+	padding: 50px 0;
+	&-title {
+		color: @white;
+		font-size: 5rem;
+		font-weight: 700;
+	}
+	&-text {
+		width: 80%;
+		margin: auto;
+		color: @white;
+		font-size: 1.6rem;
+		margin-bottom: 40px;
+		margin-top: 40px;
+	}
+	&-img {
+		width: 40%;
+		height: 180px;
+	}
+}
+
+.rideall {
+	padding: 50px 0;
+	text-align: center;
+
+	&-title {
+		font-size: 5rem;
+		text-transform: uppercase;
+		font-weight: 700;
+	}
+
+	&-text {
+		font-size: 1.6rem;
+		width: 70%;
+		margin: auto;
+		font-weight: 700;
+		margin-bottom: 40px;
+		margin-top: 10px;
+	}
+}
+
+.light {
+	background: #fff url(../img/ninebot/light/bg.jpg) center no-repeat;
+	text-align: center;
+	color: @white;
+	padding: 50px 0 300px;
+
+	&-title {
+		font-size: 6rem;
+		text-transform: uppercase;
+		font-weight: 700;
+	}
+
+	&-text {
+		font-size: 1.6rem;
+		width: 70%;
+		margin: auto;
+		margin-top: 20px;
+		margin-bottom: 40px;
+	}
+}
+
+.fast {
+	background: #fff url(../img/ninebot/fast/bg.jpg) center no-repeat;
+	background-size: cover;
+	padding: 200px 0;
+
+	&-title {
+		font-size: 6rem;
+		color: @dark;
+		text-transform: uppercase;
+		font-weight: 700;
+	}
+	&-img {
+		margin-bottom: 15px;
+	}
+	&-text {
+		width: 90%;
+		font-size: 1.6rem;
+		font-weight: 400;
+		margin-bottom: 40px;
+
+		&-red {
+			display: inline-block;
+			color: @orange;
+			font-size: 1.4rem;
+			padding-bottom: 10px;
+			border-bottom: 2px solid @orange;
+		}
+	}
+}
+
+.test {
+	background: #fff url(../img/ninebot/test/bg.jpg) center no-repeat;
+	background-size: cover;
+	padding: 40px 0;
+}
+
+// Форма статичная
+.form-block {
+	width: 100%;
+	border: 5px solid @orange;
+	padding: 30px;
+	color: @white;
+
+	&-title {
+		font-size: 6rem;
+		font-weight: 700;
+		text-transform: uppercase;
+	}
+	&-text {
+		font-size: 1.6rem;
+		margin-bottom: 30px;
+	}
+
+	.form-own {
+		input {
+			display: inline-block;
+			background-color: transparent;
+			border: none;
+			height: 40px;
+			font-size: 2.4rem;
+			margin-bottom: 20px;
+			width: 330px;
+			color: @white;
+			border-bottom: 1px solid @grey;
+
+			&::placeholder {
+				color: @grey;
+			}
+		}
+
+		button {
+			display: inline-block;
+			width: 330px;
+			padding: 20px 30px;
+			background-color: @orange;
+			border: none;
+			border-bottom: 3px solid darken(@orange, 10%);
+			font-size: 2rem;
+			border-radius: 7px;
+			text-transform: uppercase;
+		}
+	}
+}
+
+.charge {
+	background: #fff url(../img/ninebot/charge/bg.jpg) center right no-repeat;
+	padding: 200px 0;
+
+	&-title {
+		font-size: 5rem;
+		text-transform: uppercase;
+		font-weight: 700;
+	}
+
+	&-text {
+		font-size: 2rem;
+	}
+}
+
+.smart {
+	text-align: center;
+	background-color: #000;
+	color: @white;
+	padding: 50px 0;
+
+	&-title {
+		font-size: 6rem;
+		font-weight: 700;
+		text-transform: uppercase;
+	}
+
+	&-text {
+		font-size: 1.8rem;
+		width: 90%;
+		margin: auto;
+		margin-bottom: 80px;
+		margin-top: 10px;
+	}
+
+	&-hand {
+		position: relative;
+		bottom: -50px;
+	}
+
+}
+
+.download-video {
+	padding: 50px 0;
+	.form-block-title {
+		color: @dark;
+		width: 70%;
+		font-size: 5rem;
+	}
+	.form-block-text {
+		color: #000;
+		width: 40%;
+	}
+	.form-own {
+		input {
+			color: @dark;
+			margin-bottom: 40px;
+		}
+	}
+	&-img {
+		position: absolute;
+		top: 50%;
+		transform: translate(-50%,-50%);
+		right: -40%;
+	}
+}
+
+.wheel {
+	background: #fff url(../img/ninebot/wheel/bg.jpg) center  no-repeat;
+	background-size: cover;
+	padding: 200px 0;
+	&-title {
+		font-size: 5rem;
+		color: @white;
+		text-transform: uppercase;
+		font-weight: 700;
+	}
+	&-text {
+		font-size: 1.6rem;
+		color: @white;
+		margin-top: 30px;
+		margin-bottom: 30px;
+	}
+
+	.red-text {
+		color: @orange;
+		margin-top: 10px;
+	}
+}
+
+.buyhiro {
+	&-big-img {
+		width: 100%;
+	}
+}
+
+.buyhiro {
+	padding: 50px 0;
+	&-subtitle {
+		font-size: 4rem;
+		font-weight: 700;
+	}
+	&-title {
+		font-size: 6rem;
+		text-transform: uppercase;
+		font-weight: 700;
+	}
+	&-text {
+		font-size: 1.8rem;
+		margin-bottom: 20px;
+	}
+	.row {
+		margin-bottom: 30px;
+	}
+	.select-color {
+		display: inline-block;
+		color: @grey;
+		}
+	.pdf {
+		position: absolute;
+		top: 65%;
+	}
+	.download-instruction {
+		display: inline-block;
+		padding-left: 40px;
+		position: relative;
+		top: 20px;
+		color: @orange;
+		text-decoration: underline;
+	}
+	.old-price {
+		text-decoration: line-through;
+		font-size: 3rem;
+	}
+	.new-price {
+		font-size: 4rem;
+		font-weight: 700;
+	}
+	.buy-btn {
+		padding: 8px 60px;
+		font-size: 3rem;
+		color: @white;
+		background-color: @orange;
+		border: none;
+		border-radius: 7px;
+		font-weight: 700;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+	.low-price {
+		color: @orange;
+		text-decoration: underline;
+		margin-left: 8px;
+	}
+}
+
+.easy-to-use {
+	position: relative;
+	z-index: 100;
+	background: #fff url(../img/ninebot/easy-to-use/bg.jpg) center no-repeat;
+	background-size: cover;
+	padding: 300px 0px 600px;
+	
+	&-title {
+		color: @white;
+		font-size: 5rem;
+		text-transform: uppercase;
+	}
+	&-text {
+		color: @white;
+		font-size: 1.8rem;
+	}
+
+}
+
+.garant {
+	z-index: 10;
+	position: relative;
+	padding: 200px 0;
+
+	&-title {
+		font-size: 6rem;
+		text-transform: uppercase;
+		font-weight: 700;
+	}
+	&-text {
+		font-size: 1.6rem;
+	}
+
+	&-img {
+		display: inline-block;
+		position: absolute;
+		top: -40%;
+	}
+}
+
+.security {
+	background: #000 url(../img/ninebot/security/bg.png) center no-repeat;
+	padding: 50px 0;
+	background-size: cover;
+
+	.form-block-title {
+		font-size: 5rem;
+	}
+}
+
+.download-instruction {
+	padding: 50px 0;
+	.container {
+		.big-img {
+		width: 100%;
+		}
+
+		.download {
+			.pdf {
+			width: 1000px;
+			}
+			.link {
+				font-size: 4rem;
+			}
+
+		}
+	}
+	
+}
