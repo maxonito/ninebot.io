@@ -517,6 +517,9 @@ button:hover {
   margin-bottom: 40px;
   margin-top: 10px;
 }
+.rideall-img-big {
+  width: 100%;
+}
 .light {
   background: #ffffff url(../img/ninebot/light/bg.jpg) center no-repeat;
   text-align: center;
@@ -794,7 +797,11 @@ button:hover {
 .garant-img {
   display: inline-block;
   position: absolute;
-  top: -40%;
+  overflow: hidden;
+  width: 50%;
+  top: 30%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 .security {
   background: #000000 url(../img/ninebot/security/bg.png) center no-repeat;
