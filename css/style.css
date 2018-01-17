@@ -863,3 +863,53 @@ ul {
   top: 50%;
   left: 10%;
 }
+.offer-form {
+  display: inline-block;
+  width: 100%;
+  border: 3px solid #ff6700;
+  height: 380px;
+}
+.offer-form input {
+  height: 30px;
+  padding: 10px;
+  border: none;
+  border-bottom: 1px solid#d3d3d3;
+  margin-bottom: 10px;
+}
+.offer-form input::-webkit-input-placeholder {
+  color: #999c9e;
+}
+.offer-form input:-ms-input-placeholder {
+  color: #999c9e;
+}
+.offer-form input::-ms-input-placeholder {
+  color: #999c9e;
+}
+.offer-form input::placeholder {
+  color: #999c9e;
+}
+.offer-form-title {
+  font-size: 3rem;
+  text-transform: uppercase;
+  padding: 15px;
+  font-weight: 700;
+}
+.offer-form-text {
+  font-size: 1.6rem;
+}
+.offer-form-btn {
+  padding: 10px 35px;
+  margin-top: 15px;
+  background-color: transparent;
+  border: 2px solid #d3d3d3;
+  color: #d3d3d3;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  border-radius: 5px;
+}
+.offer-form-btn:hover {
+  background-color: #ff6700;
+  border: none;
+  border-bottom: 2px solid #cc5200;
+  color: #ffffff;
+}
