@@ -20,6 +20,9 @@ ul {
 * {
   outline: none;
 }
+button:hover {
+  background-color: #e65d00;
+}
 .header {
   background-color: #ff6700;
 }
@@ -67,6 +70,7 @@ ul {
   padding: 1.2rem 2rem;
   background-color: #eb5f00;
   border: none;
+  border-bottom: 3px solid #cc5200;
   color: #ffffff;
   text-transform: uppercase;
   border-radius: 7px;
@@ -237,12 +241,16 @@ ul {
   text-transform: uppercase;
   font-size: 2rem;
   border-radius: 7px;
+  border-bottom: 3px solid #cc5200;
 }
 .hiro-lower {
   color: #ff6700;
-  display: inline-block;
   line-height: 0.9;
   border-bottom: 1px dotted #ff6700;
+}
+.hiro-lower:hover {
+  color: #ff6700;
+  text-decoration: none;
 }
 .hiro-advant1 {
   display: inline-block;
@@ -346,7 +354,12 @@ ul {
 .charact {
   background: #ffffff url(../img/ninebot/charact/overall-summary-bg.jpg) center no-repeat;
   background-size: cover;
+  position: relative;
   height: 1000px;
+}
+.charact-wrapper {
+  position: absolute;
+  bottom: 0;
 }
 .charact-item {
   text-align: center;
@@ -357,9 +370,8 @@ ul {
   color: #323940;
   text-align: center;
   text-transform: uppercase;
-  padding-top: 37%;
 }
-.charact p {
+.charact .red-text {
   text-align: center;
   margin-top: 10px;
   font-size: 1.6rem;
@@ -437,6 +449,7 @@ ul {
 }
 .compare .table .buy-first {
   border-bottom: 2px solid #ff6700;
+  padding-top: 0;
 }
 .compare .table .buy button {
   padding: 1rem 4rem;
@@ -446,6 +459,10 @@ ul {
   border: none;
   background-color: #e65d00;
   border-radius: 7px;
+  border-bottom: 3px solid #cc5200;
+}
+.compare .table .buy button:hover {
+  background-color: #cc5200;
 }
 .compare .table .buy a {
   padding: 1rem 4rem;
@@ -455,6 +472,11 @@ ul {
   border: none;
   background-color: #e65d00;
   border-radius: 7px;
+  border-bottom: 3px solid #cc5200;
+}
+.compare .table .buy a:hover {
+  background-color: #cc5200;
+  text-decoration: none;
 }
 .howride {
   background-color: #000;
@@ -594,6 +616,9 @@ ul {
   border-radius: 7px;
   text-transform: uppercase;
 }
+.form-block .form-own button:hover {
+  background-color: #cc5200;
+}
 .charge {
   background: #ffffff url(../img/ninebot/charge/bg.jpg) center right no-repeat;
   padding: 200px 0;
@@ -729,6 +754,9 @@ ul {
   margin-top: 10px;
   margin-bottom: 10px;
 }
+.buyhiro .buy-btn:hover {
+  background-color: #cc5200;
+}
 .buyhiro .low-price {
   color: #ff6700;
   text-decoration: underline;
@@ -805,6 +833,19 @@ ul {
 .off-distr {
   background-color: #e8e8e8;
   padding: 50px 0;
+}
+.off-distr-block {
+  position: relative;
+}
+.off-distr-block-hover {
+  position: absolute;
+  left: 0;
+  opacity: 0;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.off-distr-block-hover:hover {
+  opacity: 1;
 }
 .off-distr h2 {
   margin-top: 100px;

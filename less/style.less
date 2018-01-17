@@ -33,6 +33,13 @@ ul {
 	outline: none;
 }
 
+button {
+
+	&:hover {
+		background-color: darken(@orange, 5%);
+	}
+}
+
 // Основные стили
 .header {
 	background-color: @orange;
@@ -86,6 +93,7 @@ ul {
 		padding: 1.2rem 2rem;
 		background-color: darken(@orange, 4%);
 		border: none;
+		border-bottom: 3px solid darken(@orange, 10%);
 		color: @white;
 		text-transform: uppercase;
 		border-radius: 7px;
@@ -261,13 +269,19 @@ ul {
 		text-transform: uppercase;
 		font-size: 2rem;
 		border-radius: 7px;
+		border-bottom: 3px solid darken(@orange, 10%);
 	}
 
 	&-lower {
 		color: @orange;
-		display: inline-block;
+		
 		line-height: 0.9;
 		border-bottom: 1px dotted @orange;
+
+		&:hover {
+			color: @orange;
+			text-decoration: none;
+		}
 	}
 
 	&-advant1 {
@@ -380,7 +394,12 @@ ul {
 .charact {
 	background: #fff url(../img/ninebot/charact/overall-summary-bg.jpg) center no-repeat;
 	background-size: cover;
+	position: relative;
 	height: 1000px;
+	&-wrapper {
+		position: absolute;
+		bottom: 0;
+	}
 	&-item {
 		text-align: center;
 	}
@@ -391,15 +410,14 @@ ul {
 		color: @dark;
 		text-align: center;
 		text-transform: uppercase;
-		padding-top: 37%;
 	}
-	p {
+
+	.red-text {
 		text-align: center;
 		margin-top: 10px;
 		font-size: 1.6rem;
 		color: @orange;
 	}
-
 	&-text {
 		width: 40%;
 		text-align: center;
@@ -408,6 +426,8 @@ ul {
 		margin-bottom: 40px;
 		color: @dark;
 	}
+
+	
 
 }
 
@@ -482,6 +502,7 @@ ul {
 
 			&-first {
 				border-bottom: 2px solid @orange;
+				padding-top: 0;
 			}
 			button {
 				padding: 1rem 4rem;
@@ -491,6 +512,12 @@ ul {
 				border: none;
 				background-color: darken(@orange, 5%);
 				border-radius: 7px;
+				border-bottom: 3px solid darken(@orange, 10%);
+				&:hover {
+					background-color: darken(@orange,10%);
+				}
+
+
 			}
 			a {
 				padding: 1rem 4rem;
@@ -500,6 +527,11 @@ ul {
 				border: none;
 				background-color: darken(@orange, 5%);
 				border-radius: 7px;
+				border-bottom: 3px solid darken(@orange, 10%);
+				&:hover {
+					background-color: darken(@orange,10%);
+					text-decoration: none;
+				}
 			}
 		}
 	}
@@ -649,6 +681,9 @@ ul {
 			font-size: 2rem;
 			border-radius: 7px;
 			text-transform: uppercase;
+			&:hover {
+				background-color: darken(@orange,10%);
+			}
 		}
 	}
 }
@@ -801,6 +836,9 @@ ul {
 		font-weight: 700;
 		margin-top: 10px;
 		margin-bottom: 10px;
+		&:hover {
+			background-color: darken(@orange, 10%);
+		}
 	}
 	.low-price {
 		color: @orange;
@@ -894,6 +932,22 @@ ul {
 .off-distr {
 	background-color: #e8e8e8;
 	padding: 50px 0;
+
+	&-block{
+		position: relative;
+		&-hover {
+			position: absolute;
+			left: 0;
+			opacity: 0;
+			transition: all 0.2s;
+			&:hover {
+				opacity: 1;
+			}
+		}
+		&-img {
+			
+		}
+	}
 
 	h2 {
 		margin-top: 100px;
