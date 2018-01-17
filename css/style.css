@@ -802,3 +802,64 @@ ul {
 .off-distr-text {
   font-size: 1.8rem;
 }
+.offer {
+  text-align: center;
+  padding: 30px 0;
+}
+.offer-title {
+  font-size: 5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.offer-text {
+  margin-top: 20px;
+  margin-bottom: 60px;
+  font-size: 1.8rem;
+}
+.offer-img {
+  display: inline-block;
+  width: 70%;
+  margin: auto;
+}
+.offer-img-wrap {
+  position: relative;
+  height: 150px;
+}
+.offer-model {
+  display: inline-block;
+  margin-top: 15px;
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.offer-price {
+  font-size: 2.2rem;
+}
+.offer-btn {
+  padding: 10px 35px;
+  margin-top: 15px;
+  background-color: transparent;
+  border: 2px solid #d3d3d3;
+  color: #d3d3d3;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  border-radius: 5px;
+}
+.offer-btn:hover {
+  background-color: #ff6700;
+  border: none;
+  border-bottom: 2px solid #cc5200;
+  color: #ffffff;
+}
+.offer-item {
+  margin-bottom: 20px;
+  height: 360px;
+}
+.offer .img-e {
+  width: 140px;
+}
+.offer .img-acces {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+}
