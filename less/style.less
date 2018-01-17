@@ -102,6 +102,12 @@ ul {
 		height: 130px;
 		padding: 0;
 		margin: 0;
+		a {
+			text-decoration: none;
+			&:hover {
+				color: @white;
+			}
+		}
 
 		&-item {
 			position: relative;
@@ -111,6 +117,15 @@ ul {
 			text-align: center;
 			padding-top: 20px;
 			padding-bottom: 20px;
+			transition: all 0.2s;
+
+			&:hover {
+				background-color: darken(@orange, 5%);
+				.range-text {
+					color: @white;
+				}
+
+			}
 		}
 	}
 
