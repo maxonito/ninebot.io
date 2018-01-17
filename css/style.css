@@ -398,7 +398,7 @@ button:hover {
 .compare-text {
   text-align: center;
   margin: auto;
-  font-size: 1.6rem;
+  font-size: 20px;
   margin-bottom: 40px;
 }
 .compare .table tr > td:first-child {
@@ -522,9 +522,11 @@ button:hover {
 }
 .light {
   background: #ffffff url(../img/ninebot/light/bg.jpg) center no-repeat;
+  background-size: cover;
   text-align: center;
   color: #ffffff;
-  padding: 50px 0 300px;
+  height: 1000px;
+  padding-top: 40px;
 }
 .light-title {
   font-size: 6rem;
@@ -624,7 +626,8 @@ button:hover {
 }
 .charge {
   background: #ffffff url(../img/ninebot/charge/bg.jpg) center right no-repeat;
-  padding: 200px 0;
+  background-size: cover;
+  padding: 100px 0;
 }
 .charge-title {
   font-size: 5rem;
@@ -646,7 +649,7 @@ button:hover {
   text-transform: uppercase;
 }
 .smart-text {
-  font-size: 1.8rem;
+  font-size: 20px;
   width: 90%;
   margin: auto;
   margin-bottom: 80px;
@@ -986,5 +989,44 @@ button:hover {
 @media screen and (max-width: 1000px) {
   .charact-text {
     width: 80%;
+  }
+  .smart-text {
+    font-size: 10px;
+  }
+  .compare-text {
+    font-size: 10px;
+  }
+  .compare-title {
+    font-size: 2rem;
+  }
+  .howride {
+    background-color: #ffffff;
+    font-size: 14px;
+  }
+  .howride-text {
+    font-size: 10px;
+    color: #323940;
+  }
+  .howride-title {
+    color: #323940;
+  }
+  .rideall {
+    display: none;
+  }
+  .light-text {
+    width: 100%;
+    font-size: 3rem;
+  }
+  .charge {
+    background-position: top left;
+  }
+  .download-video-img {
+    right: 0;
+    top: 30%;
+    -webkit-transform: translateX(33%);
+            transform: translateX(33%);
+  }
+  .easy-to-use {
+    background-position: right;
   }
 }
