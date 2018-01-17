@@ -983,3 +983,8 @@ button:hover {
 .footer span {
   margin-left: 40px;
 }
+@media screen and (max-width: 1000px) {
+  .charact-text {
+    width: 80%;
+  }
+}
