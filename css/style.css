@@ -913,3 +913,12 @@ ul {
   border-bottom: 2px solid #cc5200;
   color: #ffffff;
 }
+.footer {
+  background-color: #323940;
+  color: #ffffff;
+  padding: 20px;
+  font-size: 1.6rem;
+}
+.footer span {
+  margin-left: 40px;
+}
