@@ -846,19 +846,32 @@ ul {
 }
 
 .download-instruction {
-	padding: 50px 0;
-	.container {
-		.big-img {
+	position: relative;
+	padding: 20px 0;
+
+	&-img {
 		width: 100%;
+	}
+
+	&-item {
+		position: absolute;
+		top: 60%;
+		left: 47.5%;
+		height: 50px;
+
+		.pdf {
+			display: inline-block;
+			width: 35px;
 		}
 
-		.download {
-			.pdf {
-			width: 1000px;
-			}
-			.link {
-				font-size: 4rem;
-			}
+		.link {
+			display: inline-block;
+			position: relative;
+			top: 8px;
+			font-size: 1.6rem;
+			line-height: 16px;
+			color: @orange;
+			text-decoration: underline;
 
 		}
 	}

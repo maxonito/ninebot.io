@@ -764,14 +764,28 @@ ul {
   font-size: 5rem;
 }
 .download-instruction {
-  padding: 50px 0;
+  position: relative;
+  padding: 20px 0;
 }
-.download-instruction .container .big-img {
+.download-instruction-img {
   width: 100%;
 }
-.download-instruction .container .download .pdf {
-  width: 1000px;
+.download-instruction-item {
+  position: absolute;
+  top: 60%;
+  left: 47.5%;
+  height: 50px;
 }
-.download-instruction .container .download .link {
-  font-size: 4rem;
+.download-instruction-item .pdf {
+  display: inline-block;
+  width: 35px;
+}
+.download-instruction-item .link {
+  display: inline-block;
+  position: relative;
+  top: 8px;
+  font-size: 1.6rem;
+  line-height: 16px;
+  color: #ff6700;
+  text-decoration: underline;
 }
