@@ -643,6 +643,9 @@ button:hover {
   color: #ffffff;
   padding: 50px 0;
 }
+.smart .col-md-4:hover {
+  color: #ff6700;
+}
 .smart-title {
   font-size: 6rem;
   font-weight: 700;
@@ -658,6 +661,23 @@ button:hover {
 .smart-hand {
   position: relative;
   bottom: -50px;
+}
+.smart-img {
+  width: 120px;
+}
+.smart-hover {
+  position: absolute;
+  left: 0;
+  -webkit-transform: translateX(17%);
+          transform: translateX(17%);
+  width: 123px;
+  opacity: 0;
+}
+.smart-hover:hover {
+  opacity: 1;
+}
+.smart-hover:hover .smart-text {
+  color: #ff6700;
 }
 .download-video {
   padding: 50px 0;

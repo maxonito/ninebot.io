@@ -717,6 +717,12 @@ button {
 	color: @white;
 	padding: 50px 0;
 
+	.col-md-4 {
+		&:hover {
+			color: @orange;
+		}
+	}
+
 	&-title {
 		font-size: 6rem;
 		font-weight: 700;
@@ -734,6 +740,24 @@ button {
 	&-hand {
 		position: relative;
 		bottom: -50px;
+	}
+	&-img {
+		width: 120px;
+	}
+	&-hover {
+		position: absolute;
+		left: 0;
+		transform: translateX(17%);
+		width: 123px;
+		opacity: 0;
+
+		&:hover {
+			opacity:1;
+			.smart-text {
+				color: @orange;
+			}
+
+		}
 	}
 
 }
